@@ -132,7 +132,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.2,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.4,
@@ -696,6 +696,22 @@
     [
       "66043bca-a260-4915-9fce-8a51d324c687",
       "Root"
+    ],
+    [
+      "4d7e3ed5-574d-418d-8ca6-bce29c8d90fd",
+      "MAX31855K"
+    ],
+    [
+      "d893cc2b-26ba-47f0-9c99-62381596d841",
+      "MAX31855K1"
+    ],
+    [
+      "d3688754-9641-416e-b648-ef9120105274",
+      "MAX31855K2"
+    ],
+    [
+      "040ca6bf-605c-44d4-ae2b-f68370c86fc0",
+      "MAX31855K3"
     ]
   ],
   "text_variables": {}
