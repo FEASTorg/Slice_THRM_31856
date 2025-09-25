@@ -1,14 +1,18 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "ed403231-84c0-46fb-92f7-5764fe64965b")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -78,10 +82,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -90,10 +94,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -139,9 +143,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_US"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -212,18 +219,6 @@
 			(symbol "R_US_0_1"
 				(polyline
 					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 2.286) (xy 0 2.54)
 					)
 					(stroke
@@ -236,7 +231,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
 					)
 					(stroke
 						(width 0)
@@ -260,7 +255,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -309,10 +316,15 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Diode:1N4148W"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -410,10 +422,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -422,10 +434,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -471,6 +483,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Sensor_Temperature:MAX31856"
 			(exclude_from_sim no)
@@ -552,65 +565,6 @@
 						(type background)
 					)
 				)
-				(circle
-					(center -0.127 -2.54)
-					(radius 1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 0.635) (xy -0.127 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy -0.127 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 1.905) (xy -0.127 1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 2.54) (xy -0.127 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -0.762 3.175) (xy -0.762 0)
@@ -637,6 +591,77 @@
 				)
 				(polyline
 					(pts
+						(xy -0.762 2.54) (xy -0.127 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 1.905) (xy -0.127 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy -0.127 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0.635) (xy -0.127 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.762 3.175)
+					(mid -0.127 3.8073)
+					(end 0.508 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.127 -2.54)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
 						(xy 0.508 3.175) (xy 0.508 0)
 					)
 					(stroke
@@ -658,20 +683,99 @@
 						(type outline)
 					)
 				)
-				(arc
-					(start 0.508 3.175)
-					(mid -0.127 3.8073)
-					(end -0.762 3.175)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
 			(symbol "MAX31856_1_1"
+				(pin input line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "T+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "T-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "BIAS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(hide yes)
+					(name "DNC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 15.24 270)
+					(length 2.54)
+					(name "AVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
 					(at -2.54 -15.24 90)
 					(length 2.54)
@@ -683,6 +787,96 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 15.24 270)
+					(length 2.54)
+					(name "DVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -15.24 90)
+					(length 2.54)
+					(name "DGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 7.62 180)
+					(length 2.54)
+					(name "~{DRDY}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "~{FAULT}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "~{CS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -744,187 +938,8 @@
 						)
 					)
 				)
-				(pin output line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "~{FAULT}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 -15.24 90)
-					(length 2.54)
-					(name "DGND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -2.54 0)
-					(length 2.54)
-					(name "BIAS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 0 0)
-					(length 2.54)
-					(name "T-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 2.54 0)
-					(length 2.54)
-					(name "T+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 15.24 270)
-					(length 2.54)
-					(name "AVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -10.16 -7.62 0)
-					(length 2.54) hide
-					(name "DNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 7.62 180)
-					(length 2.54)
-					(name "~{DRDY}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 15.24 270)
-					(length 2.54)
-					(name "DVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name "~{CS}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
@@ -1002,7 +1017,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1014,7 +1029,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1028,7 +1043,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -1045,6 +1061,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -1124,7 +1141,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1141,7 +1159,75 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 91.44 36.83)
+		(end 163.83 91.44)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3174e7ca-1fb9-4793-8810-d55c6e6eaf8c)
+	)
+	(rectangle
+		(start 167.64 36.83)
+		(end 210.82 91.44)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 888c36c0-cee3-4308-89fd-4d8b73fb74de)
+	)
+	(rectangle
+		(start 91.44 93.98)
+		(end 210.82 161.29)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid faffe187-d186-470d-9ec5-6e10ce43d370)
+	)
+	(text "Level Shifting for Input[-Output]"
+		(exclude_from_sim no)
+		(at 189.992 34.798 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "82a6af06-6294-45e2-94c9-4f7b96a71ba4")
+	)
+	(text "Typical Application Ciruit for MAX31856"
+		(exclude_from_sim no)
+		(at 124.714 34.798 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b373ad1e-2237-4f4e-9836-e48b93f65795")
+	)
+	(text "TYPICAL APPLICATION CIRCUIT FROM DATASHEET\n"
+		(exclude_from_sim no)
+		(at 132.08 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eea77262-1d5d-4baa-b855-c62ada8140ce")
 	)
 	(junction
 		(at 152.4 45.72)
@@ -1928,42 +2014,6 @@
 			(color 221 133 0 1)
 		)
 		(uuid "fc0f4ea8-b2a1-4fe5-88c5-105e38f4447b")
-	)
-	(rectangle
-		(start 91.44 36.83)
-		(end 163.83 91.44)
-		(stroke
-			(width 0.254)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 3174e7ca-1fb9-4793-8810-d55c6e6eaf8c)
-	)
-	(rectangle
-		(start 167.64 36.83)
-		(end 210.82 91.44)
-		(stroke
-			(width 0.254)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 888c36c0-cee3-4308-89fd-4d8b73fb74de)
-	)
-	(rectangle
-		(start 91.44 93.98)
-		(end 210.82 161.29)
-		(stroke
-			(width 0.254)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid faffe187-d186-470d-9ec5-6e10ce43d370)
 	)
 	(image
 		(at 151.13 128.016)
@@ -2808,44 +2858,48 @@
 			"gNKQdwAAAAAAAKUh7wAAAAAAAEpD3gEAAAAAAJSGvAMAAAAAACgNeQcAAAAAAFAa8g4AAAAAAKA0"
 			"5B0AAAAAAEBpyDsAAAAAAIDSkHcAAAAAAAClIe8AAAAAAABKQ94BAAAAAACUhrwDAAAAAAAoDXkH"
 			"AAAAAABQGvIOAAAAAACgNOQdAAAAAABAacg7AAAAAACA0pB3AAAAAAAApSHvAAAAAAAASkPeAQAA"
-			"AAAAlOb/rxpzdfoazvIAAAAASUVORK5CYII="
+			"AAAAlOb/rxpzdfoazvIAAAAASUVORK5CYIIOUtMAtQOAAAAAAAAAAAADAAAAAAAAADDgY16kAgAA"
+			"AQAAAAAAAAAAAAAAAAAAAGwOT9MAtgOAAAAAAAAAAAADAAAAAAAAAECJb16kAgAAAQAAAAAAAAAA"
+			"AAAAAAAAAGkOTNMAtwOA0IxvXqQCAAADAAAAAAAAAPDcY16kAgAAAQAAAAAAAAAAAAAAAAAAAGYO"
+			"SdMAuAOAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAGMORtMAuQOAIIVv"
+			"XqQCAAADAAAAAAAAALDpb16kAgAAAQAAAAAAAAAAAAAAAAAAAGAOQ9MAugOAgI5vXqQCAAADAAAA"
+			"AAAAAEDrb16kAgAAAQAAAAAAAAAAAAAAAAAAAJ0PQNMAuwOAMIdvXqQCAAADAAAAAAAAAPDqb16k"
+			"AgAAAQAAAAAAAAAAAAAAAAAAAJoPPdMAvAOAcIxvXqQCAAADAAAAAAAAANDdY16kAgAAAQAAAAAA"
+			"AAAAAAAAAAAAAJcPOtMAvQOAwIdvXqQCAAADAAAAAAAAABDsb16kAgAAAQAAAAAAAAAAAAAAAAAA"
+			"AJQPN9MAvgOAcIlvXqQCAAADAAAAAAAAAJDeY16kAgAAAQAAAAAAAAAAAAAAAAAAAJEPNNMAvwOA"
+			"AAAAAAAAAAADAAAAAAAAANDbY16kAgAAAQAAAAAAAAAAAAAAAAAAAI4PMdMAwAOAAAAAAAAAAAAD"
+			"AAAAAAAAALDkb16kAgAAAQAAAAAAAAAAAAAAAAAAAIsPLtMAwQOAAAAAAAAAAAADAAAAAAAAAEDn"
+			"b16kAgAAAQAAAAAAAAAAAAAAAAAAAIgPK9MAwgOAAAAAAAAAAAADAAAAAAAAAPDZY16kAgAAAQAA"
+			"AAAAAAAAAAAAAAAAAIUPKNMAwwOAAAAAAAAAAAAIAAAAAAAAAACa1FekAgAAAQAAAAAAAAAAAAAA"
+			"AAAAAIIPJdMAxAOAAAAAAAAAAAADAAAAAAAAAIDmb16kAgAAAQAAAAAAAAAAAAAAAAAAAL8PItMA"
+			"xQOAAJNvXqQCAAADAAAAAAAAACDob16kAgAAAQAAAAAAAAAAAAAAAAAAALwPH9MAxgOAwJNvXqQC"
+			"AAADAAAAAAAAANDZY16kAgAAAQAAAAAAAAAAAAAAAAAAALkPHNMAxwOAAAAAAAAAAAADAAAAAAAA"
+			"ADCWb16kAgAAAQAAAAAAAAAAAAAAAAAAALYPGdMAyAOAAAAAAAAAAAAIAAAAAAAAAMCY1FekAgAA"
+			"AQAAAAAAAAAAAAAAAAAAALMPFtMAyQOAAJZvXqQCAAADAAAAAAAAAODpb16kAgAAAQAAAAAAAAAA"
+			"AAAAAAAAALAPE9MAygOAMJNvXqQCAAADACC8OO0FgFN0YW5kYXJkAABBAEQAawA1ACsAZABYAJa9"
+			"PrxR7gWAzprOsc69zr/Ovc65zrrOrAAANQBhAFcAlL08vDDvBYBTdGFuZGFyZAAAaAAvAGMAdgAz"
+			"ADMAcgCavTq8avAFgE5vcm1hYWxpAABzAGIAbQB6AFIAcwAzAJi9OLxR8QWASGlnaCBUb3dlciBU"
+			"ZXh0AFoATABwADQAnr02vGLyBYAGAAAAEAAAABCDCAAAAAAAAAAAAAAAAACcvTS8c/MFgAYAAAAQ"
+			"AAAAoH0IAAAAAAAAAAAAAAAAAIK9Mrw29AWASW1wcmludCBNVCBTaGFkb3cAVgBkAGMAgL0wvDn1"
+			"BYDOms6xzr3Ov869zrnOus6sAAB5AFcAeACGvc67cfYFgE5vcm3DoWxuZQBoAGkAagBXAFoAcwBF"
+			"AIS9zLs29wWASW5mb3JtYWwgUm9tYW4AADcAcgB2AC8Air3Ku074BYBvYnnEjWVqbsOpAABRAE8A"
+			"aAAzAHQANgCIvci7dvkFgGt1cnrDrXZhAABKAEoATQBKAGgAUABEAI69xrtI+gWATm9ybWFhbGkA"
+			"AHMAZgBIAGoAdwBBAEYAjL3Eu0L7BYBOb3Jtw6FsbmUATgBrAHQAWQBjAEgAdQCyvcK7SfwFgE5v"
+			"cm1hbG55AAA3ADkAOAA3AC8ANgBPALC9wLtN/QWAAAAAAAAAAADXJU4MSgBiAGA+YRCAAgAAtr3e"
+			"u3P+BYAGAAAAEAAAAKBxCAAAAAAAAAAAAAAAAAC0vdy7Z/8FgG9iecSNZWpuw6kAAE8ATwAyAHcA"
+			"bwBLALq92rtRAAaABgAAABAAAABwPwgAAAAAAAAAAAAAAAAAuL3Yu1MBBoBOb3Jtw6FsbmUAaABv"
+			"AFYAcABkAFAAagC+vda7RAIGgNCe0LHRi9GH0L3Ri9C5AABUAE4AZgBGALy91Ls5AwaAU3RhbmRh"
+			"cmQAAFYASABYAGgASwBsAEsAor3Su1AEBoBvYnnEjWVqbsOpAABMAGwARwBWAFUASgCgvdC7NAUG"
+			"gM6azrHOvc6/zr3Ouc66zqwAAHUAWQA5AKa97rtCBgaA0J7QsdGL0YfQvdGL0LkAAFoASwBxAG4A"
+			"pL3su2cHBoBTdGFuZGFyZAAAVABFAC8AbQAvAE4AVACqveq7dggGgG9iecSNZWpuw6kAAHQAMQB2"
+			"AEkAeQBtAKi96LswCQaAb2J5xI1lam7DqQAAWQBwADkANQBvAGwArr3mu2EKBoBOb3Jtw6FsbmUA"
+			"dQBwAFkAbgBxAGYAWgCsveS7QwsGgM6azrHOvc6/zr3Ouc66zqwAAEgAQQB6AFK64rtMDAaAU3Rh"
+			"bmRhYXJkAEgAcABWAGIAbABpAGcAULrguw=="
 		)
-	)
-	(text "Level Shifting for Input[-Output]"
-		(exclude_from_sim no)
-		(at 189.992 34.798 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "82a6af06-6294-45e2-94c9-4f7b96a71ba4")
-	)
-	(text "Typical Application Ciruit for MAX31856"
-		(exclude_from_sim no)
-		(at 124.714 34.798 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b373ad1e-2237-4f4e-9836-e48b93f65795")
-	)
-	(text "TYPICAL APPLICATION CIRCUIT FROM DATASHEET\n"
-		(exclude_from_sim no)
-		(at 132.08 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "eea77262-1d5d-4baa-b855-c62ada8140ce")
 	)
 	(hierarchical_label "DR"
 		(shape input)
 		(at 223.52 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2857,7 +2911,6 @@
 	(hierarchical_label "T-"
 		(shape input)
 		(at 99.06 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2869,7 +2922,6 @@
 	(hierarchical_label "SDO"
 		(shape input)
 		(at 223.52 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2881,7 +2933,6 @@
 	(hierarchical_label "FAULT"
 		(shape input)
 		(at 223.52 62.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2893,7 +2944,6 @@
 	(hierarchical_label "CS"
 		(shape input)
 		(at 223.52 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2905,7 +2955,6 @@
 	(hierarchical_label "SDI"
 		(shape input)
 		(at 223.52 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2917,7 +2966,6 @@
 	(hierarchical_label "T+"
 		(shape input)
 		(at 99.06 60.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2929,7 +2977,6 @@
 	(hierarchical_label "SCK"
 		(shape input)
 		(at 223.52 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
